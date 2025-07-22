@@ -1,0 +1,340 @@
+/*# Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+
+
+## Colors
+
+- Red: hsl(14, 86%, 42%)
+- Green: hsl(159, 69%, 38%)
+
+- Rose 50: hsl(20, 50%, 98%)
+- Rose 100: hsl(13, 31%, 94%)
+- Rose 300: hsl(14, 25%, 72%)
+- Rose 400: hsl(7, 20%, 60%)
+- Rose 500: hsl(12, 20%, 44%)
+- Rose 900: hsl(14, 65%, 9%)
+
+
+
+- Font size (product names): 16px
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 1440px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  margin: 50px;
+  background-color: hsl(20, 50%, 98%);
+}
+.article {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
+}
+h2 {
+  color: red;
+}
+.shipping-cart {
+  border: 2px;
+  padding: 10px;
+  height: auto;
+  width: 300px;
+  background-color: white;
+}
+.cart-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 10px;
+}
+
+.display-items {
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  padding: 5px;
+}
+.img-box {
+  position: relative;
+  width: 100px;
+}
+.image {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.item {
+  padding: 20px;
+}
+.active {
+  border-style: solid;
+  border-color: hsl(14, 86%, 42%);
+}
+.product-details {
+  padding: 30px 0px;
+}
+.product {
+  font-size: 10px;
+  color: hsl(7, 20%, 60%);
+}
+.product-name {
+  font-size: 16px;
+  color: hsl(12, 20%, 44%);
+}
+.price {
+  color: hsl(0, 92%, 47%);
+}
+.btn {
+  position: absolute;
+  top: 90%;
+  left: 30%;
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 12px;
+  padding: 2px;
+  color: hsl(12, 20%, 44%);
+  border: none;
+}
+.btn-change {
+  position: absolute;
+  top: 90%;
+  left: 30%;
+  width: 150px;
+  height: 40px;
+  background-color: hsl(14, 86%, 42%);
+  border-radius: 50px;
+  font-size: 12px;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  color: hsl(20, 50%, 98%);
+  display: none;
+}
+
+.btn-in-icon,
+.btn-down-icon {
+  border-radius: 70%;
+  background-color: hsl(14, 86%, 42%);
+  padding: 5px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(224, 86%, 42%);
+}
+
+.close-btn {
+  border-radius: 50%;
+
+  height: 25px;
+  padding: 5px;
+  position: absolute;
+  right: 0%;
+  top: 25%;
+}
+
+.cart-ele {
+  display: block;
+  padding: 10px;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.item-price {
+  color: hsl(14, 25%, 72%);
+}
+.times {
+  color: hsl(14, 86%, 42%);
+}
+.item-name div {
+  color: hsl(14, 65%, 9%);
+}
+.price-name {
+  display: flex;
+  padding: 10px 0px;
+}
+.price-name p {
+  padding-right: 10px;
+}
+.price-name span {
+  color: hsl(12, 20%, 44%);
+}
+.hide-show {
+  visibility: hidden;
+}
+.total-order,
+.total-order-confirm {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.carbon {
+  background-color: hsl(20, 50%, 98%);
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+  color: hsl(14, 25%, 72%);
+}
+.confirm-btn,
+.start-new {
+  background-color: hsl(14, 86%, 42%);
+  border-radius: 40%;
+  padding: 10px 80px;
+  margin: 20px 10px;
+  border: none;
+  color: white;
+}
+.orderconfirm-img {
+  padding: 5px 0px;
+}
+.order-confirmed {
+  font-size: larger;
+  padding: 5px 2px;
+}
+.description {
+  font-size: 12px;
+  color: hsl(14, 25%, 72%);
+  padding: 10px 2px;
+}
+.order-details-confirm {
+  display: flex;
+
+  background-color: hsl(13, 31%, 94%);
+  padding: 5px 0px;
+  margin: 1px 5px;
+  border-radius: 5px;
+  min-width: 100%;
+  justify-content: space-between;
+}
+.name-quan,
+.img-confirm {
+  margin: 10px 5px;
+}
+
+.total-confirm {
+  margin: 10px 10px;
+}
+.order-details-confirm img {
+  height: 40px;
+  width: 40px;
+}
+.item-name-confirm {
+  font-size: 15px;
+  margin: 0px 5px;
+}
+.item-price-confirm {
+  font-size: 15px;
+  color: hsl(14, 25%, 72%);
+}
+
+.quan-price-align {
+  display: flex;
+  margin: 5px;
+}
+.quan-price-align p {
+  margin: 5px;
+}
+
+.total-amount {
+  font: bold;
+  font-weight: 900;
+  font-size: large;
+}
+
+.hidden {
+  display: none;
+}
+/* classes to make modal work*/
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+
+  background-color: white;
+  padding: 2rem 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .items {
+    display: block;
+  }
+  .article {
+    display: block;
+  }
+  .modal {
+    width: 100%;
+  }
+}
+/*Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    margin: 10px;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: 300px 300px;
+  }
+  .article {
+    display: block;
+  }
+  .modal {
+    width: 100%;
+  }
+}
+
+/*Medium devices (landscape tablets, 768px and up)*/
+
+@media only screen and (min-width: 768px) {
+  .items {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+  }
+  .article {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .modal {
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .modal {
+    width: 40%;
+  }
+}
