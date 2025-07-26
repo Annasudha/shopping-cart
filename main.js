@@ -23,13 +23,18 @@ const addItem = function (e) {
 
   //const border = item.querySelector(".image");
   //By getElementsByClassName we can select all elements with the same class and its a HTML live collection which means it updates the DOM when changes occurs
-  const border = item.getElementsByClassName("image")[0];
+  //whereas querySelector will return a static nodelist that will not changes the DOM
+  //const border = item.getElementsByClassName("image")[0];
+  const border = item.querySelector(".image");
   console.log(border);
   const pictures = border.getAttribute("src");
   console.log(pictures);
-  const price = item.getElementsByClassName("price")[0].innerText;
-  const productName = item.getElementsByClassName("product-name")[0].innerText;
-  const productId = item.getElementsByClassName("product-name")[0].dataset.id;
+ // const price = item.getElementsByClassName("price")[0].innerText;
+  const price = item.querySelector(".price").innerText;
+  //const productName = item.getElementsByClassName("product-name")[0].innerText;
+  const productName = item.querySelector(".product-name").innerText;
+ // const productId = item.getElementsByClassName("product-name")[0].dataset.id;
+   const productId = item.querySelector(".product-name")[0].dataset.id;
   const btnDownIcon = btnChange.querySelector(".btn-down-icon");
   const btnInIcon = btnChange.querySelector(".btn-in-icon");
   const itemQuantity = btnChange.querySelector(".quan");
