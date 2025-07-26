@@ -23,7 +23,7 @@ const addItem = function (e) {
 
   //const border = item.querySelector(".image");
   //By getElementsByClassName we can select all elements with the same class and its a HTML live collection which means it updates the DOM when changes occurs
-  //whereas querySelector will return a static nodelist that will not changes the DOM
+  //whereas querySelector will return a static nodelist that will not be affected by the  changes in the DOM
   //const border = item.getElementsByClassName("image")[0];
   const border = item.querySelector(".image");
   console.log(border);
